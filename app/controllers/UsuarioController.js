@@ -1,8 +1,8 @@
 const Ajv = require('ajv');
 const ajv = new Ajv();
-const schema = require('../schemas/usuario/novousuario.js');
+const schema = require('../schemas/usuario/novoUsuario.js');
 const validacao = ajv.compile(schema);
-const schemaUpdate = require('../schemas/usuario/atualizausuario.js');
+const schemaUpdate = require('../schemas/usuario/atualizaUsuario.js');
 const validacaoUpdate = ajv.compile(schemaUpdate);
 const models = require('../models');
 const Usuario = models.usuario;
